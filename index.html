@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and OCR</title>
+</head>
+<body>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: aqua;
+        }
+        form {
+        margin-top: 20px;
+        text-align: center;
+        background: blue;
+        color: aqua;
+        }
+        h2{
+        text-align: center;
+        }
+        </style>
+        </head>
+        <body>
+        
+
+        <h2>رفع صورة لقراءة النص</h2>
+
+        <form action="process.php" method="POST" enctype="multipart/form-data">
+        <label for="image">اختر صورة:</label>
+        <input type="file" name="image" id="image" accept="image/*" required>
+        <button type="submit">رفع الصورة</button>
+        </form>
+        
+        
+</body>
+</html>
